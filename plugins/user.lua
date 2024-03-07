@@ -10,8 +10,9 @@ return {
   --   end,
   -- },
   --
-  
-  -- NOTE: Package for todo comments
+
+  -- TODO: Test
+  -- NOTE:Package for todo comments
   {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },

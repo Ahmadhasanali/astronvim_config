@@ -32,9 +32,23 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+    -- Move line
+    ["<A-j>"] = { ":m .+1<CR>==", desc = "Move up one line" },
+    ["<A-k>"] = { ":m .-2<CR>==", desc = "Move down one line" },
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+  },
+  i = {
+    -- Move line
+    ["<A-j>"] = { "<Esc> :m .+1<CR>==gi", desc = "Move up one line" },
+    ["<A-k>"] = { "<Esc> :m .-2<CR>==gi", desc = "Move down one line" },
+  },
+  v = {
+    -- Move line
+    ["<A-j>"] = { ":m '>+1<CR>gv=gv", desc = "Move up one line" },
+    ["<A-k>"] = { ":m '<-2<CR>gv=gv", desc = "Move down one line" },
   },
 }
