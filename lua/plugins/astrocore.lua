@@ -44,8 +44,8 @@ return {
     mappings = {
       -- first key is the mode
       i = {
-        ["<M-j>"] = { "<Esc>:m .+1<CR>==gi", desc = "Move line of cursor 1 line to down" },
-        ["<M-k>"] = { "<Esc>:m .-2<CR>==gi", desc = "Move line of cursor 1 line to up" },
+        -- ["<M-j>"] = { "<Esc>:m .+1<CR>==gi", desc = "Move line of cursor 1 line to down" },
+        -- ["<M-k>"] = { "<Esc>:m .-2<CR>==gi", desc = "Move line of cursor 1 line to up" },
       },
       n = {
         -- second key is the lefthand side of the map
@@ -68,12 +68,13 @@ return {
         ["<Leader>b"] = { desc = "Buffers" },
         -- quick save
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
-        ["<M-j>"] = { ":m .+1<CR>==", desc = "Move line of cursor 1 line to down" },
-        ["<M-k>"] = { ":m .-2<CR>==", desc = "Move line of cursor 1 line to up" },
+
+        -- ["<M-j>"] = { ":m .+1<CR>==", desc = "Move line of cursor 1 line to down" },
+        -- ["<M-k>"] = { ":m .-2<CR>==", desc = "Move line of cursor 1 line to up" },
       },
       v = {
-        ["<M-j>"] = { ":m '>+1<CR>gv=gv", desc = "Move selected line of block 1 line to down" },
-        ["<M-k>"] = { ":m '<-2<CR>gv=gv", desc = "Move selected line of block 1 line to up" },
+        -- ["<M-j>"] = { ":m '>+1<CR>gv=gv", desc = "Move selected line of block 1 line to down" },
+        -- ["<M-k>"] = { ":m '<-2<CR>gv=gv", desc = "Move selected line of block 1 line to up" },
       },
       t = {
         -- setting a mapping to false will disable it
